@@ -1,0 +1,232 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+span {
+  position: relative;
+  text-align: center;
+  padding: 20px 8px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+span:after {
+  position: relative;
+  display: block;
+  padding-bottom: 20.75px;
+  width: 120%;
+  bottom: -1;
+  right: 10%;
+  height: 2px;
+  content: '';
+  border-bottom: 1.5px solid skyblue; 
+  transform: scaleX(0);  
+  transition: transform 300ms ease;
+}
+
+span:hover:after { 
+  transform: scaleX(1); 
+}
+
+li:hover {
+  background-color: aliceblue;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  margin: 16px 0;
+}
+
+h2 {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.navbar {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  color: grey;
+  border-bottom: 0.3px solid rgb(186, 186, 186);
+}
+
+.navbar__services {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__info {
+  margin: 0;
+  display: flex;
+}
+
+li.user-info {
+  color: skyblue;
+}
+
+.container {
+  margin: 24px 10%;
+}
+.main {
+  margin: 0px 0; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.explain {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card {
+  width: 216px;
+  height: 270px;
+  margin: 12px;
+  box-shadow: 0px 3px 3px 3px rgb(238, 238, 238);
+  border-radius: 4px;
+  transition: all 200ms ease-in;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card__info {
+  padding: 4px;
+}
+
+.card__info__small {
+  display: flex;
+  color: grey;
+  justify-content: space-between;
+}
+
+.dDay {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.card__category {
+  padding: 4px 8px;
+}
+
+.service_launching {
+  display: flex;
+  margin: 80px 0;
+  width: 200%;
+}
+
+.service__launching__box {
+  padding: 0 16px;
+}
+
+.service__launching__box h5 {
+  position: relative;
+  text-align: right;
+  background-color: rgb(0, 145, 255);
+  color: white;
+  padding: 8px;
+  padding-right: 24px;
+  right: 200px;
+  z-index: -1;
+  border-radius: 0 16px 16px 0;
+}
+
+.service__launching__box h4 {
+  color: grey;
+}
+
+.vacancy_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 5;
+}
+
+.vacancy_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin: 8px;
+  width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px 5px rgb(243, 243, 243);
+  transition: all 200ms ease;
+}
+
+.vacancy_box:hover {
+  transform: translateY(-8px);
+}
+
+.company_logo {
+  height: 120px;
+  width: 120px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vacancy_explain {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy_explain h6 {
+  color: grey;
+  margin: 8px;
+}
+
+.vacancy_explain h4 {
+  margin: 8px;
+}
+
+.vacancy_explain h5 {
+  margin: 4px 8px;
+}
+
+.more_info {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px;
+  font-size: 12px;
+}
+
+.job_type {
+  background-color: rgb(206, 230, 238);
+  color: rgb(59, 151, 201);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.incentive {
+  background-color: lightgrey;
+  color: grey;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: 10px
+}
+

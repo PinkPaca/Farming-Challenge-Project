@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Countdown Timer</h1>
+  <div class="timer">
+    <div class="time_input">
+      <input type="number" value="00" class="Hour" max="99" maxlength="2">
+      <p>:</p>
+      <input type="number" value="00" class="Minute" max="59" maxlength="2">
+      <p>:</p>
+      <input type="number" value="00" class="Second" max="59" maxlength="2">
+    </div>
+    <div class="time_display">
+      <p class="hour_display"></p>
+      <p>:</p>
+      <p class="minute_display"></p>
+      <p>:</p>
+      <p class="second_display"></p>
+    </div>
+    <div class="buttons">
+      <button class="start">START</button>
+      <button class="stop">STOP</button>
+      <button class="reset">RESET</button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

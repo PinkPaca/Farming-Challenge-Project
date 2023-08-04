@@ -1,0 +1,81 @@
+* {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 4px;
+}
+
+input {
+  border:none;
+  padding: 4px;
+  border-radius: 4px;
+  width: 160px;
+  margin: 8px 0;
+}
+
+button {
+  border:none;
+  background-color: white;
+  color: salmon;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+}
+
+table {
+  table-layout: fixed;
+  width: 70%;
+  border-collapse: collapse;
+  border: 2px solid salmon;
+  text-align: center;
+}
+
+td {
+  border: 2px solid salmon;
+  height: 24px;
+}
+
+tbody td {
+  height: 80px;
+  color: salmon;
+  vertical-align: top;
+  text-align: start;
+  padding: 4px;
+}
+
+.memo_added {
+  text-decoration:underline;
+}
+
+thead {
+  background-color: lightpink;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.memo {
+  width: 30%;
+  position: absolute;
+  right: 25px;
+  display: none;
+  border: 2px solid salmon;
+  background-color: salmon;
+  margin: 8px;
+  color: white;
+}
+
+.close {
+  position: relative;
+  cursor: pointer;
+  padding: 2px;
+}

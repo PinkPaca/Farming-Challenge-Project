@@ -77,5 +77,6 @@ thead {
 .close {
   position: relative;
   cursor: pointer;
-  padding: 2px;
+  margin:8px;
+  color: rgb(219, 219, 219);
 }

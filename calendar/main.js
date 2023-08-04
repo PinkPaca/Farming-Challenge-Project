@@ -51,11 +51,6 @@ const dates = document.querySelectorAll(".date");
 const container = document.querySelector(".container");
 const memos = document.querySelectorAll(".memo");
 
-dates.forEach((date)=>date.addEventListener("click", (e) => {
-  e.target.classList.add("memo_added");
-  addMemo(e.target.innerText);
-}));
-
 function addMemo(date) {
   if(!document.querySelector(".date" + date)){
     const div = document.createElement("div");
@@ -72,6 +67,7 @@ function addMemo(date) {
     const x = document.createTextNode("x");
     span.appendChild(x);
     div.appendChild(span);
+    div.style="display:block";
 
     const input = document.createElement("input");
     input.type="text";
@@ -94,12 +90,23 @@ function addMemo(date) {
       const memoDiv = document.querySelector(".date" + date);
       const dateInput = memoDiv.querySelector("input[name=memo]");
       const list = memoDiv.querySelector("ul");
-      console.log(memoDiv);
 
       const li = document.createElement("li");
       const text = document.createTextNode(dateInput.value);
+      const xBtn = document.createElement("span");
+      const xtext = document.createTextNode("x");
+      xBtn.appendChild(xtext);
+      xBtn.classList.add("close");
+      xBtn.classList.add("delete");
+
+      li.appendChild(xBtn);
       li.appendChild(text);
+
       list.appendChild(li);
+
+      xBtn.addEventListener("click", (e)=>{
+        li.remove();
+      })
     });
   } else {
     const memo = document.querySelector(".date" + date);
@@ -107,3 +114,8 @@ function addMemo(date) {
   }
 }
 
+dates.forEach((date)=>date.addEventListener("click", (e) => {
+  addMemo(e.target.innerText);
+  e.target.classList.add("memo_added");
+
+}));

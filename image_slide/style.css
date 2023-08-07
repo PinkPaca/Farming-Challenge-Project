@@ -1,0 +1,46 @@
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.btns {
+  width: 656px;
+  height: 376px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.image-viewer {
+  position: absolute;
+  width: 656px;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image {
+  margin: 8px;
+  display: none;
+}
+
+.image img {
+  object-fit: scale-down;
+  width:auto;
+  height: auto;
+
+  max-width: 640px;
+  max-height: 360px;
+}
+
+.active {
+  display: block;
+}

@@ -264,21 +264,22 @@ button {
   height: 221px;
   text-align: center;
   vertical-align: middle;
+  border-radius: 8px;
+  background-color: rgb(72, 219, 123);
 }
 
 .image {
   margin: 4px;
   display: none;
+  color: white;
+  font-weight: 400;
+  height: 219px;
+  font-size: 24px;
+
 }
 
-.image img {
-  border-radius: 8px;
-  object-fit: scale-down;
-  width:auto;
-  height: auto;
-
-  max-width: 327px;
-  max-height: 219px;
+.image p {
+  margin-top: 48px;
 }
 
 .active {

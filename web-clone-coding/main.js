@@ -37,3 +37,17 @@ function nextImageSlide() {
 }
 
 setInterval(nextImageSlide, 2000);
+
+// toggle btn add
+
+const toggleBtn = document.querySelector(".toggle");
+toggleBtn.addEventListener("click", () => {
+  const toggleList = document.querySelector(".toggle_menu");
+  if(toggleList.classList.contains("clicked")) {
+    toggleList.style = "display: none";
+    toggleList.classList.remove("clicked");
+  } else {
+    toggleList.style = "display: flex";
+    toggleList.classList.add("clicked");
+  }
+})

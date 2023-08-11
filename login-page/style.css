@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 350px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding-bottom: 28px;
+}
+
+.logIn {
+  margin: 8px;
+  width: 60px;
+  border: none;
+  padding: 4px;
+  background-color: lightgrey;
+  border-radius: 4px;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.logIn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.id, .password{
+  width: 250px;
+  margin: 4px 8px;
+}
+
+.idAlert, .passwordAlert{
+  color: red;
+  font-size: 12px;
+  margin: 4px;
+  display: none;
+}
+
+.wrong {
+  border: 1.5px solid red;
+}
